@@ -41,7 +41,7 @@ namespace Manager.Application.Services
 
         public async Task<UserDTO> Get(long id)
         {
-            var user = await _userRepository.Get();
+            var user = await _userRepository.Get(id);
             return _mapper.Map<UserDTO>(user);
         }
 
