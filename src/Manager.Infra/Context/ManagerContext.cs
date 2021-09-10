@@ -15,11 +15,11 @@ namespace Manager.Infra.Context
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySql("Server=localhost;Database=manager;Uid=root;Pwd=;",
-            new MySqlServerVersion(new Version(8, 0, 21)));
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseMySql("Server=localhost;Database=manager;Uid=root;Pwd=;",
+        //    new MySqlServerVersion(new Version(8, 0, 21)));
+        //}
 
         public virtual DbSet<User> Users { get; set; }
 
